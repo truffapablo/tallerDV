@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Contactanos</title>
+	<script src="build/jquery.js"></script>
+	<script src="build/mediaelement-and-player.min.js"></script>
+	<script src="build/mediaelement.min.js"></script>
+	<script src="js/menu_responsive.js"></script>
+
+	<link rel="stylesheet" href="build/mediaelementplayer.min.css"/>
+	
+	<link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+	<header>
+		<section>
+			<h1>Luchetti</h1>
+			<p>"LA MATERNIDAD ES COMO UNA TABLET. <br/>AL PRINCIPIO NO ENTENDÉS UN POMO, PERO CUANDO LE AGARRÁS LA MANO NO PODÉS PARAR."</p>
+		</section>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="recetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<aside>
+		<img src="img/banner_contacto.jpg" alt="CONTACTANOS"/>
+		<p>CONTACTANOS!</p>
+	</aside>
+	
+	<section id="contenedor">
+		<section id="contacto">
+			<form action="index.html" method="post">
+				<div>
+					<span>Nombre:</span><input type="text" placeholder="Estela" required="required"/>
+				</div>
+				
+				<div>
+					<span>Apellido:</span><input type="text" placeholder="Luchetti" required="required"/>
+				</div>
+				
+				<div>
+					<span>Sexo</span>
+					<label>Masculino<input type="radio" name="sexo" checked/></label>
+					<label>Femenino<input type="radio" name="sexo"/></label>
+				</div>
+								
+				<div>
+					<span>Mail:</span><input type="email" placeholder="estela@luchetti.com.ar" required="required"/>
+				</div>
+				
+				<div>
+					<span>Teléfono</span><input type="tel" placeholder="11 - 30584432"/>
+				</div>
+				
+				<div>
+					<span>Como nos probaste?</span><input type="text" list="opciones" placeholder="TV"/>
+					<datalist id="opciones">
+						<option value="TV" label="Por comerciales">
+						<option value="Super" label="Nos compraste">
+						<option value="Amiga" label="Nos recomendaron">
+						<option value="Calidad" label="Conocias otros productos">
+						<option value="Precio" label="Por nuestros precios">
+					</datalist>
+				</div>
+				
+				
+				<div id="gusto">
+					<span>¿Que tanto te gusta LUCHETTI?</span><input type="range" value="0" min="0" max="100" step="10"/>
+				</div>
+				
+				<div>
+					<span>Comentario:</span>
+					<textarea name="" cols="30" rows="10"  required="required"></textarea>
+				</div>
+				
+				<input type="submit" value="Enviar"/>
+			</form>
+		</section>
+	</section>
+	
+	<footer>
+		<ul>
+			<li><a href="https://www.youtube.com/channel/UCKpv0xdhjQPi8aZ1RLYTYOA">Youtube</a></li>
+			<li><a href="https://www.facebook.com/MamaLucchetti">Facebook</a></li>
+			<li><a href="https://twitter.com/yomamalucchetti">Twitter</a></li>
+		</ul>
+	</footer>
+	
+	<script type="text/javascript">
+		var input = document.getElementsByTagName('input')[7];
+	
+		var gusto = document.getElementById('gusto');
+		var valor = document.createElement('input');
+		valor.type = 'text';
+		valor.id = 'rango';
+		valor.value = '0';
+		valor.disabled = true;
+		
+		gusto.appendChild(valor);
+		
+		input.onclick = function(){
+			var valor_actual = 
+			valor.value = input.value;
+			var v = valor.value;
+		}
+			
+	</script>
+	
+</body>
+</html>

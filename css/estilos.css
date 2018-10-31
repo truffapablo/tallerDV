@@ -1,0 +1,1198 @@
+@font-face {
+    font-family: 'Freestyle';
+    src: url('../font/freescpt.eot');
+    src: url('../font/freescpt.eot?#iefix') format('embedded-opentype'),
+         url('../font/freescpt.woff') format('woff'),
+         url('../font/freescpt.ttf') format('truetype'),
+         url('../font/freescpt.svg#Freestyle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
+			
+ }
+ 
+body{
+	background: #5A8DCD;
+	margin: 0 auto;
+	max-width: 1024px;
+	font-family:helvetica;
+ }
+
+body>header{
+	position:absolute;
+	top:0px;
+	width:1024px;
+	z-index:20;
+}
+ 
+body>header>section{
+	max-width:100%;
+	height:70px;
+		
+	background: #5A8DCD;
+	background: -webkit-linear-gradient(top, #97B6DE 0%,#5A8DCD 100%); 
+	background: -moz-linear-gradient(top, #97B6DE 0%, #5A8DCD 100%); 
+	background: -ms-linear-gradient(top, #97B6DE 0%,#5A8DCD 100%); 
+	background: -o-linear-gradient(top, #97B6DE 0%,#5A8DCD 100%); 
+	background:	linear-gradient(to bottom, #97B6DE 0%,#5A8DCD 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#97B6DE', endColorstr='#5A8DCD',GradientType=0 );
+}
+
+body>header section h1{
+	max-width:420px;
+	height: 70px;
+	background-image:url(../img/banner1.png);
+	background-image:url(../img/banner1.png);
+	display:inline-block;
+	text-indent: 800px;
+	overflow:hidden;
+}
+
+body>header section p{
+	display:inline-block;
+	width: 530px;
+	height: 70px;
+	margin-left: 60px;
+	vertical-align:top;
+	color: white;
+	font-weight: bold;
+	text-align:center;
+	font-size:10px;
+	margin-top: 20px;
+	line-height: 13px;
+}
+
+body>header section p:first-line{
+	font-size: 25px ;
+	
+}
+
+
+
+nav{
+	width: 100%;
+	background: #EBC834;
+	height:40px;
+	text-align: center;
+
+}
+
+nav ul{
+	display: inline-block;
+	vertical-align: top;
+	height:40px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style-type: none;
+	vertical-align: middle;
+	height:40px;
+	font-weight: bold;
+	width:100px;
+}
+
+nav ul li:first-child a{
+	border-left: 1px solid black;
+	
+}
+
+nav ul li a{
+	color: black;
+	text-decoration: none;
+	width: 104px;
+	border-right: 1px solid black;
+	display:inline-block;
+	line-height: 40px;
+	-webkit-transition:all .4s linear;
+	-moz-transition:all .4s linear;
+	transition:all .4s linear;
+}
+
+nav ul li:nth-child(1) a:hover{
+	background:url(../img/home.jpg) no-repeat top #EBC834;
+	line-height: 120px;
+	height:80px;
+	border-left: 1px solid black;
+	
+}
+
+
+nav ul li:nth-child(2) a:hover{
+	background:url(../img/galeria.jpg) no-repeat top #EBC834;
+	line-height: 120px;
+	height:80px;
+	border-left: 1px solid black;
+}
+
+
+nav ul li:nth-child(3) a:hover{
+	background:url(../img/productos.jpg) no-repeat top #EBC834;
+	line-height: 120px;
+	height:80px;
+	border-left: 1px solid black;
+}
+
+
+nav ul li:nth-child(4) a:hover{
+	background:url(../img/recetas.jpg) no-repeat top #EBC834;
+	line-height: 120px;
+	height:80px;
+	border-left: 1px solid black;
+}
+
+
+nav ul li:nth-child(5) a:hover{
+	background:url(../img/contacto.jpg) no-repeat top #EBC834;
+	line-height: 120px;
+	height:80px;
+	border-left: 1px solid black;
+}
+
+
+
+aside{
+	margin-top: 110px;
+	position: relative;
+	height: 270px;
+	background: #C3262C;
+	max-width: 1024px;
+}
+
+aside img{
+	max-width: 1024px;
+	min-width: 768px;
+}
+
+aside p{
+	text-align:center;
+	background: #852E37;
+	width: 522px;
+	height:50px;
+	color: white;
+	font-size: 1em;
+	font-weight:bold;
+	line-height: 53px;
+	margin-top:-33px;
+	position:absolute;
+	margin-left:auto;
+}
+
+/*		FIN COMUNES		*/
+
+
+
+/*		HOME	*/
+#contenedor{
+	background: white;
+	padding-top:1px;
+	padding-bottom: 20px;
+}
+
+#contenedor #tips{
+	width: 370px;
+	height: 385px;
+	background: #662D8B;
+	border-radius:10px;
+	margin-left: 38px;
+	margin-top: 52px;
+	color:white;
+	display: inline-block;
+	
+}
+
+#contenedor #tips h1{
+	text-align: center;
+	margin: 0 auto;
+	border-bottom: 1px solid white;
+	width: 200px;
+	
+}
+
+#contenedor #tips h1:before{
+	content:url(../img/1.png);
+	margin-left: -80px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	margin-top: 10px;
+	display:inline-block;
+	
+}
+
+#contenedor #tips ul{
+	width: 300px;
+	margin:0 auto;
+}
+
+#contenedor #tips ul li{
+	list-style-type: circle;
+	margin-top:20px;
+	font-family: Freestyle;
+	font-size: 1.6em;
+	line-height: .8em;
+}
+
+
+#contenedor #promo{
+	width:487px;
+	height:329px;
+	background: #98005d;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 92px;
+	border-radius: 10px;
+	margin-left:80px;
+	margin-right:40px;
+	
+}
+
+#contenedor #promo h1{
+	color:white;
+	background: #98005d;
+	width:287px;
+	margin-left: 100px;
+	padding:20px 5px 5px 5px;
+	text-align: center;
+	margin-top:-40px;
+}
+
+
+#contenedor #promo video{
+	margin:40px 20px 0px 20px;
+	border:10px solid black;
+}
+
+
+.receta{
+	width: 97%;
+	border: 12px dotted black;
+	margin: 0 auto;
+	position: relative;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	
+}
+
+.receta section{
+	display: inline-block;
+	vertical-align: top;
+	
+}
+
+.receta header, .receta section{
+	width:54%;
+	margin-left:10px;
+	margin-right:20px;
+	text-align: center;
+}
+
+.receta header h1{
+	font-family: Freestyle;
+	font-size: 2.9em;
+	line-height: .8em;
+	display: inline-block;
+	border-bottom:1px solid white;
+	padding:0 10px;
+	padding-top:20px;
+	margin-bottom: 5px;
+}
+
+.receta section{
+	margin-top: 30px;
+	width: 54%;
+}
+
+.receta section h2{
+	font-size: 1em;
+}
+
+.receta section p{
+	padding-bottom: 20px;
+	width:100%;
+}
+
+.receta section ul li{
+	text-align:left;
+	width:300px;
+	margin: 4px auto;
+}
+
+.receta figure{
+	position:absolute;
+	top:60px;
+	right:20px;
+	border: 5px solid white;
+}
+
+#recdeldia{
+	background: #EBC834;
+	border-color: #662D80;
+	background-clip: -moz-padding-box;
+	background-clip: -webkit-padding-box;
+	background-clip: -o-padding-box;
+	background-clip: padding-box;
+}
+
+
+.receta header h1{
+	border-bottom:1px solid black;
+}
+
+footer{
+	width: 100%;
+	background:#DFBC34;
+	height:50px;
+}
+
+footer ul{
+	text-align:center;
+}
+
+footer ul li{
+	text-align:center;
+	display:inline-block;
+	width:72px;
+	margin-top: 10px;
+	
+}
+
+footer ul li a:first-child{
+	background:url(../img/redes.png);
+	background-repeat:no-repeat;
+	padding:23px 23px;
+	font-size:0;
+	
+}
+
+footer ul li:nth-child(2) a{
+	background-position: -62px 0;
+}
+
+
+footer ul li:nth-child(3) a{
+		background-position: -124px 0;
+}
+
+
+
+/*		GALERIA		*/
+#contenedor #spots{
+	margin:0 auto;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	background: #5a80c0;
+	border: 12px dotted #2c3a6a;
+	width:97%;
+	text-align: center;
+}
+
+#contenedor #spots>h1{
+	color: white;
+	font-size: 2em;
+	width: 100%;
+	display: block;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+#contenedor #spots article{
+	width: 43%;
+	display: inline-block;
+	margin-left:3%;
+	margin-right:3%;
+	vertical-align:top;
+}
+
+#contenedor #spots video{
+	border:6px solid white;
+}
+
+
+#contenedor #spots video+article{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 300px;
+	background: white;
+	border-radius: 10px;
+	padding: 10px;
+	height: 2.4em;
+	overflow: hidden;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+}
+
+#contenedor #spots video+article:hover{
+	height: 5.5em;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+}
+
+
+#contenedor #spots video+article h1{
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+
+#contenedor #spots video+article p{
+	font-size: .7em;
+	font-weight: bold;
+	color: #b6262c;
+	border-top: 1px dashed #2c3a6a;
+	padding-top: .7em;
+}
+
+
+#contenedor #gal{
+	margin: 0 auto;
+	width:97%;
+	text-align: center;
+}
+
+#contenedor #gal #gr{
+	margin: 0 auto;
+	width: 70%;
+	padding: 25px;
+	
+	background: #802e37;
+	background: -webkit-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:    -moz-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	-ms-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	 -o-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:			linear-gradient(to right, #802e37 0%,#b6262c 50%,#802e37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#802e37', endColorstr='#802e37',GradientType=1 );
+	
+	-moz-box-shadow: 0 0 15px black;
+	-webkit-box-shadow: 0 0 15px black;
+	box-shadow: 0 0 25px black;
+}
+
+#contenedor #gal #gr img{
+	width: 100%;
+	border: 5px solid white;
+
+
+}
+
+#contenedor #gal #ch{
+	margin-top: 40px;
+	width: 100%;
+	padding:15px 10px;
+	height: 120px;
+	
+	background: #802e37;
+	background: -webkit-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:    -moz-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	-ms-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	 -o-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:			linear-gradient(to right, #802e37 0%,#b6262c 50%,#802e37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#802e37', endColorstr='#802e37',GradientType=1 );
+}
+
+
+#contenedor #gal #ch img:first-child{
+	margin-left: 10px;
+}
+
+#contenedor #gal #ch img:last-child{
+	margin-right: 0;
+}
+
+#contenedor #gal #ch img{
+	width: 110px;
+	margin-top: 10px;
+	margin-right: 25px;
+	border: 2px solid white;
+	opacity: .5;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: linear;
+	vertical-align: middle;
+}
+
+
+#contenedor #gal #ch img:hover{
+	width: 125px;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+	opacity: 1;
+	vertical-align: middle;
+	
+	-moz-box-shadow: 0 0 15px white;
+	-webkit-box-shadow: 0 0 15px white;
+	box-shadow: 0 0 20px white;
+}
+
+
+/*		PRODUCTOS		*/
+
+#prod {
+	width: 97%;
+	margin: 0 auto;
+	
+}
+
+#prod>article:first-child{
+	margin-top: 1em;
+
+}
+
+#prod>article{
+	border-radius: 10px;
+	margin-bottom: 5em;
+	background: #802e37;
+	background: -webkit-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:    -moz-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	-ms-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background: 	 -o-linear-gradient(left, #802e37 0%,#b6262c 50%,#802e37 100%);
+	background:			linear-gradient(to right, #802e37 0%,#b6262c 50%,#802e37 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#802e37', endColorstr='#802e37',GradientType=1 );
+	
+	position: relative;
+}
+
+#prod img{
+	width: 100%;
+}
+
+
+#prod article .descripcion{
+	width: 50%;
+	background: #e1be34;
+	border-radius: 10px;
+	text-align: center;
+	height: 2.6em;
+	overflow: hidden;
+	position: absolute;
+	bottom: -1.3em;
+	left: 22%;
+	
+	-moz-box-shadow: 0 0 15px black;
+	-webkit-box-shadow: 0 0 15px black;
+	box-shadow: 0 0 20px black;
+	
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+}
+
+#prod article .descripcion:hover{
+	bottom: -3.9em;
+	height: 5.2em;
+		
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	transition:all .5s;
+	transition-timing-function: ease-in-out;
+	
+}
+
+
+#prod article .descripcion h1{
+	font-size: 1.3em;
+	font-weight: bold;
+	padding: .5em .5em;
+}
+
+/*		RECETA		*/
+#receta1{
+	background: #EBC834;
+	border-color: #662D80;
+	background-clip: -moz-padding-box;
+	background-clip: -webkit-padding-box;
+	background-clip: -o-padding-box;
+	background-clip: padding-box;
+}
+
+
+#receta2{
+	background: #e5811e;
+	border-color: #965a20;
+	background-clip: -moz-padding-box;
+	background-clip: -webkit-padding-box;
+	background-clip: -o-padding-box;
+	background-clip: padding-box;
+}
+
+
+#receta3{
+	background: #db1e79;
+	border-color: #842452;
+	background-clip: -moz-padding-box;
+	background-clip: -webkit-padding-box;
+	background-clip: -o-padding-box;
+	background-clip: padding-box;
+	padding-bottom: 3em;
+}
+
+
+
+/*		CONTACTO		*/
+
+#contacto{
+	width: 100%;
+	height:100%;
+	background: url(../img/contacto.png) no-repeat top center,url(../img/form.png) no-repeat bottom;
+	
+	padding-top: 1px;
+}
+
+
+#contacto form{
+	width: 60%;
+	margin: 0 auto;
+	padding: 1em;
+	border-radius: 10px;
+	background: #802e37;
+	margin: 0 auto;
+	margin-top:205px;
+	text-align: center;
+}
+
+
+#contacto form div{
+	width: 97%;
+	margin-top: 1em;
+}
+
+#contacto form input[type="radio"]{
+	width: 2em;
+	margin-left: 0;
+}
+
+
+#contacto form label{
+	display: inline-block;
+	color: white;
+	width: 30%;
+}
+
+
+
+#contacto form span{
+	text-align: left;
+	width: 15%;
+	display: inline-block;
+	color: white;
+	margin-bottom: .5em;
+}
+
+#contacto form input{
+	border-radius: .5em;
+	padding: .2em;
+	width: 60%;
+	
+}
+
+#contacto form input:focus{
+	border: .3em solid #f7e13a;
+	
+}
+
+
+#contacto form input[type="range"]{
+	width: 75%;
+	margin-top: .5em;
+}
+
+#contacto form #rango{
+	width:10%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+#contacto form div:nth-child(7) span{
+	width: 75%;
+	margin-bottom: .3em;
+}
+
+#contacto form div:nth-child(8){
+	text-align: left;
+	
+}
+
+#contacto form div:nth-child(8) span{
+	display: inline;
+	vertical-align: top;
+	margin-top: .2em;
+	margin-left: 13%;
+}
+
+
+#contacto form div:nth-child(8) textarea{
+	width: 75%;
+	height: 6em;
+	margin-top: .5em;
+	display: block;
+	margin: 0 auto;
+	border-radius: 10px;
+	resize: none;
+}
+
+#contacto form div:nth-child(8) textarea:focus{
+	border: .3em solid #f7e13a;
+	
+}
+
+#contacto form input[type="submit"]{
+	width: 6em;
+	margin-top: 2em;
+}
+
+
+
+#contacto form div:nth-child(1) span:before,#contacto form div:nth-child(2) span:before,#contacto form div:nth-child(4) span:before,#contacto form div:nth-child(5) span:before,#contacto form div:nth-child(8) span:before{
+	content: " * ";
+	color: #d5b234;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+
+
+@media screen and (max-width:1024px){
+body{
+	width:100%;
+}
+
+body>header{
+	width: 100%;
+}
+
+body>header section p{
+	width: 45%;
+	margin-left:10px;
+	font-size:11px;
+	margin-top: 22px;
+	line-height: 10px;
+}
+
+body>header section p:first-line{
+	font-size: 18px ;
+}
+
+aside{
+	margin-top: 110px;
+	height: 240px;
+	background: #C3262C;
+	width: 100%;
+	text-align: center;
+	
+}
+
+aside img{
+	width: 900px;
+	position: relative;
+}
+
+aside p{
+	left: 17%;
+}
+
+#contenedor{
+	text-align: center;
+}
+
+#contenedor #tips{
+	margin-left: 0px;
+	margin-top: 52px;
+	margin-right: 20px;	
+}
+
+#contenedor #promo{
+	margin: 92px 0 0 0;
+}
+
+#contenedor #promo video{
+	margin:40px 20px 0px 20px;
+	border:10px solid black;
+}
+
+
+.receta{
+	text-align:left;	
+	
+}
+
+.receta section{
+	margin-left: 12px;
+}
+
+.receta section p{
+	text-align: center;
+	width: 90%;
+}
+
+
+}
+
+@media screen and (max-width:900px){
+body>header section{
+	text-align: center;
+	
+}
+
+body>header section p{
+	font-size: 9px;
+}
+
+body>header section p{
+	display: block;
+	width: 100%;
+	background: #5A8DCD;
+	margin:0;
+	height: 60px;
+	padding-top: 20px;
+}
+
+nav{
+	margin-top: 70px;
+	font-size: .8em;
+}
+
+aside{
+	display: none;
+}
+
+body{
+	width:100%;
+	
+}
+
+#contenedor{
+	margin-top:200px;
+}
+
+
+
+#contenedor #spots article video{
+	width: 100%;
+}
+
+#contenedor #spots article article{
+	width: 100%;
+}
+
+#contenedor #spots article article h1{
+	font-size: .8em;
+}
+
+#contenedor #gal #ch a img{
+	width: 12%;
+}
+
+#contenedor #gal #ch a img:hover{
+	width: 14%;
+	margin: 0;
+}
+
+#contenedor #prod article article h1{
+	font-size: 1.2em;
+	
+}
+
+#contenedor #prod article article p{
+	font-size: .8em;
+}
+
+.receta{
+	text-align:center;
+	width: 100%;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+	padding-bottom: 30px;
+}
+
+.receta section{
+	width: 100%;
+	margin: 0;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+
+.receta header h1{
+	width: 50%;
+	margin-left: 150px;
+	margin-right: 200px;
+}
+
+.receta header p{
+	display: none;
+}
+
+.receta header{
+	text-align: center;
+	width: 100%;
+}
+
+.receta header h1{
+	width: 80%;
+	text-align: center;
+	margin: 0;
+}
+
+#recdeldeia p{
+width: 100%;
+text-align:center;
+
+}
+
+.receta p{
+	width: 100%;
+	text-align:center;
+	margin: 0;
+	padding:0;
+	display: inline;
+}
+
+.receta figure{
+	position:static;
+	width:394px;
+	height:354px;
+	border: 5px solid white;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+
+#contenedor #contacto{
+	width: 97%;
+	margin: 0 auto;
+	background: url(../img/contacto.png) no-repeat top center;
+}
+
+
+#contenedor #contacto form{
+	width: 100%;
+}
+
+#contenedor #contacto form span{
+	width: 20%;
+}
+
+#contenedor #contacto form div  input[type="range"]{
+	width: 90%;
+}
+
+#contenedor #contacto form div:nth-child(7) input[type="text"]{
+	width: 100px;
+}
+
+#contenedor #contacto form div:nth-child(7) span{
+	display: inline;
+	width: 100%;
+}
+
+#contenedor #contacto form input{
+	width: 70%;
+	
+}
+
+
+}
+
+@media screen and (max-width:500px){
+
+body>header section{
+	text-align: center;
+}
+
+body>header section p{
+	display: none;
+}
+
+
+body{
+	width:100%;
+	
+}
+
+body>header{
+	width: 100%;
+}
+
+nav{
+	background: #EBC834;
+	margin: 0;
+}
+
+aside{
+	display: none;
+}
+
+
+#contenedor{
+	background: white;
+	text-align: center;
+	margin-top: 82px;
+}
+
+#contenedor #tips{
+	margin-left: 0px;
+	margin-top: 52px;
+	margin-right: 20px;	
+	
+}
+
+
+#contenedor #promo{
+	margin: 92px 0 0 0;
+}
+
+#contenedor #promo video{
+	margin:40px 20px 0px 20px;
+	border:10px solid black;
+}
+
+
+#contenedor #spots article article{
+	height: 2em;
+}
+
+
+#contenedor #spots h1{
+	font-size: 1.3em;
+}
+
+#contenedor #spots article article h1{
+	font-size: .8em;
+}
+
+#contenedor #gal #ch a img{
+	width: 12%;
+}
+
+#contenedor #gal #ch a img:hover{
+	width: 14%;
+	margin: 0;
+}
+
+#contenedor #prod{
+	margin-top: 50px;
+}
+
+#contenedor #prod article article h1{
+	font-size: 1.2em;
+	
+}
+
+#contenedor #prod article article p{
+	font-size: .8em;
+}
+
+
+.receta{
+	text-align:center;
+	width: 100%;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+}
+
+.receta section{
+	width: 100%;
+	margin: 0;
+	margin-top: 20px;
+	text-align: center;
+	
+}
+
+.receta header{
+	text-align: center;
+	width: 100%;
+}
+
+.receta header h1{
+	width: 80%;
+	text-align: center;
+	margin: 0;
+}
+
+#recdeldeia p{
+width: 100%;
+	text-align:center;
+
+}
+
+.receta p{
+	width: 100%;
+	text-align:center;
+	margin: 0;
+	padding:0;
+}
+
+.receta figure{
+	display: none;
+}
+
+
+
+}
+
+
+@media (max-width:535px) and (min-width:500px){
+	nav{
+		margin-top: 70px !important;
+		width: 100% !important;
+	}
+}
+
+
+@media screen and (max-width:535px){
+body{
+	min-width:500px;
+}
+
+nav{
+	width: 500px;
+	background: #EBC834;
+	height:40px;
+	text-align: center;
+	margin: 20px auto;
+	
+}
+
+nav ul li{
+	width: 70px;
+}
+
+nav ul li a{
+	width: 74px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

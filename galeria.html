@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Galeria</title>
+	<script src="build/jquery.js"></script>
+	<script src="build/mediaelement-and-player.min.js"></script>
+	<script src="build/mediaelement.min.js"></script>
+	<script src="js/menu_responsive.js"></script>
+
+	<link rel="stylesheet" href="build/mediaelementplayer.min.css"/>
+	
+	<link rel="stylesheet" href="css/estilos.css"/>
+</head>
+<body>
+	<header>
+		<section>
+			<h1>Luchetti</h1>
+			<p>"LA MATERNIDAD ES COMO UNA TABLET. <br/>AL PRINCIPIO NO ENTENDÉS UN POMO, PERO CUANDO LE AGARRÁS LA MANO NO PODÉS PARAR."</p>
+		</section>
+		
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="productos.html">Productos</a></li>
+				<li><a href="recetas.html">Recetas</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<aside>
+		<img src="img/banner_gal.jpg" alt="La reunion de siempre cuando sale un spot nuevo"/>
+		<p>NOSOTROS EN LA TV</p>
+	</aside>
+	
+	<section id="contenedor">
+		<section id="spots">
+			<h1>ULTIMOS SPOTS</h1>
+			<article>
+				<video controls  poster="img/vid1.jpg">
+					<source src="videos/MamaLucchetti-Gauchos.ogv" type="video/ogg">
+					<source src="videos/MamaLucchetti-Gauchos.mp4" type="video/mp4">
+					<source src="videos/MamaLucchetti-Gauchos.webm" type="video/webm">
+				</video>
+				
+				<article class="descripcion">
+					<h1>Mamá Luchetti - MANDINGA</h1>
+					<p>Segundo SPOT de nuestras milangas de soja, protaginizado por nuestros primos del campo.</p>
+				</article>
+			</article>
+			
+			<article>
+				<video controls  poster="img/vid2.jpg">
+					<source src="videos/MamaLucchetti-Mandinga.ogv" type="video/ogg">
+					<source src="videos/MamaLucchetti-Mandinga.mp4" type="video/mp4">
+					<source src="videos/MamaLucchetti-Mandinga.webm" type="video/webm">
+				</video>
+			
+				<article class="descripcion">
+					<h1>Mamá Luchetti - GAUCHOS</h1>
+					<p>Presentamos nuestras milangas de soja, protaginizado por nuestros primos del campo.</p>
+				</article>
+			</article>
+		</section>
+	
+		<section id="gal">
+			<section id="gr">
+				<img src="img/galeria/foto1.jpg" alt="La familia reunida"/>
+			</section>
+			
+			<section id="ch">
+				<a href="javascript:void(0)"><img src="img/galeria/foto1.jpg" alt="La familia reunida"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto2.jpg" alt="Los fideos de mamá"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto4.jpg" alt="Mi selfie"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto5.jpg" alt="Salida con los del super"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto6.jpg" alt="El amor de mi hija"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto7.jpg" alt="Sexy"/></a>
+				<a href="javascript:void(0)"><img src="img/galeria/foto8.jpg" alt="Milonga"/></a>
+			</section>
+		</section>
+		
+	</section>
+	
+	<footer>
+		<ul>
+			<li><a href="https://www.youtube.com/channel/UCKpv0xdhjQPi8aZ1RLYTYOA">Youtube</a></li>
+			<li><a href="https://www.facebook.com/MamaLucchetti">Facebook</a></li>
+			<li><a href="https://twitter.com/yomamalucchetti">Twitter</a></li>
+		</ul>
+	</footer>
+	
+	<script type="text/javascript">
+		var ch = document.getElementById('ch');
+		var fotos = document.getElementsByTagName('a');
+		
+		var gr = document.getElementById('gr');
+		var f_grande = gr.getElementsByTagName('img')[0];
+		
+	
+		for(var i in fotos){
+			fotos[i].onclick = function(){
+				var src = this.getElementsByTagName('img')[0].src;
+				f_grande.src = src;
+			}
+		}
+	
+	
+	</script>
+	
+	
+</body>
+</html>
